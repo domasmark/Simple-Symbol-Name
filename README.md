@@ -1,4 +1,4 @@
-# Shorten Symbol Names
+# Shorten Symbol Names (a.k.a "Simple Symbol Name")
 
 ## Description
 
