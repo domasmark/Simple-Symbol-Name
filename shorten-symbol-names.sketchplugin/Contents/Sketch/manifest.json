@@ -9,7 +9,7 @@
   "bundleVersion": 1,
   "commands": [
     {
-      "script" : "./script.js",
+      "script" : "./autoRename.js",
       "name" : "Shorten New Symbol Name",
       "handlers" : {
         "actions": {
@@ -18,6 +18,27 @@
         }
       },
       "identifier" : "my-action-listener-identifier"
+    },
+    {
+      "name" : "Shorten Selected Names",
+      "shortcut": "cmd shift alt d",
+      "identifier" : "shorten-selected",
+      "script" : "./shortcutRename.js",
+      "handler": "ShortenSelectedNames"
+    },
+    {
+      "name" : "Set Default Name",
+      "shortcut": "cmd shift alt c",
+      "identifier" : "set-default",
+      "script" : "./shortcutRename.js",
+      "handler": "SetDefaultName"
     }
-  ]
+  ],
+  "menu": {
+    "name": "Symbol Names",
+    "items": [
+      "shorten-selected",
+      "set-default"
+    ]
+  }
 }
