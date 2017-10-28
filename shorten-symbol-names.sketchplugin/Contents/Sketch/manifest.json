@@ -1,0 +1,23 @@
+{
+  "name" : "Shorten Symbol Names",
+  "identifier" : "domasmark.shortensymbolnames",
+  "version" : "1.0.0",
+  "description" : "Shortens symbol names when included from a library",
+  "authorEmail" : "domas.marko@gmail.com",
+  "author" : "Domas Markevičius",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "script" : "./script.js",
+      "name" : "Shorten New Symbol Name",
+      "handlers" : {
+        "actions": {
+          "InsertSymbol.finish": "onInsertSymbol",
+          "SelectionChanged.finish": "onSelectionChanged"
+        }
+      },
+      "identifier" : "my-action-listener-identifier"
+    }
+  ]
+}
