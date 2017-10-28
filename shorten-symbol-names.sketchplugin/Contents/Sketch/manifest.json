@@ -1,6 +1,6 @@
 {
-  "name" : "Shorten Symbol Names",
-  "identifier" : "domasmark.shortensymbolnames",
+  "name" : "Simple Symbol Name",
+  "identifier" : "domasmark.simplesymbolname",
   "version" : "1.0.0",
   "description" : "Shortens symbol names when included from a library",
   "authorEmail" : "domas.marko@gmail.com",
